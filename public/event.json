@@ -1,0 +1,9 @@
+ [
+    { "id": 1, "name": "Concerto Rock", "date": "2024-12-01", "location": "Milano", "availableSeats": 100 },
+    { "id": 2, "name": "Spettacolo Teatrale", "date": "2024-12-05", "location": "Roma", "availableSeats": 50 },
+    { "id": 3, "name": "Mostra d'Arte", "date": "2024-12-10", "location": "Firenze", "availableSeats": 30 },
+    { "id": 4, "name": "Festival del Cinema", "date": "2024-12-15", "location": "Venezia", "availableSeats": 200 },
+    { "id": 5, "name": "Conferenza Tech", "date": "2024-12-20", "location": "Torino", "availableSeats": 150 },
+    { "id": 6, "name": "Fiera del Libro", "date": "2024-12-25", "location": "Bologna", "availableSeats": 80 },
+    { "id": 7, "name": "Evento di Beneficenza", "date": "2024-12-30", "location": "Napoli", "availableSeats": 120 }
+]
