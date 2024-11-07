@@ -1,29 +1,113 @@
-.container-lg {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 24px;
+body{
+  background: linear-gradient(270deg, #8e44ad, #9b59b6, #d2b4de, #e8daef);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s linear infinite;
+  font-weight: bold;
+  font-family:cursive;
+ 
 }
-.card {
-  border: 1px solid black;
-  padding: 30px;
-  background-color: whitesmoke;
-  border-radius: 24px;
-  color: black;
+.col-4{
+  width: calc(3 * 100% / 12);
+
 }
+
+/* CARD *//* CARD *//* CARD *//* CARD */
+.card{
+  
+  border: 1px solid transparent;
+  padding: 26px;
+  border-radius: 24px; 
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+.card-event {
+  background-color: rgba(109, 138, 235, 0.753);
+  
+  &:hover{
+   background-color: #A2B2EE;
+   transform: scale(1.2) ; 
+   color:rgba(8, 31, 233, 0.87);
+  }
+}
+
+ .card-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.card-header{
+  margin-bottom: 12px;
+}
+
+.card-body{
+  display: flex;
+  /* border: 1px solid black; */
+  flex-grow: 1;
+  padding: 10px;
+}
+
+
+/* ROW *//* ROW *//* ROW *//* ROW */
 .row {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
+.row-list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 20px;
+ 
+  
+}
+
+/* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON */ 
+
 .button {
-  border: 1px solid black;
+  border: 1px solid ;
   padding: 12px;
   font-size: 14px;
-  border-radius: 30px;
-  color: white;
+  border-radius: 12px;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.button:disabled {
+  background-color: #cccccc; 
+  color: #666666; 
+  cursor: not-allowed; 
+  text-decoration: line-through; 
+}
+ .btn-booking{
+  transition: transform 0.3s ease-in-out;
+  font-size: 20px;
+  background-color: #5A0834;
+  color: white;
+    &:hover{
+      transform: scale3d(250);
+  }
+ }
+
+
+
+
+
+ /* KEYFRAME */ /* KEYFRAME */ /* KEYFRAME */ /* KEYFRAME */
+ @keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
